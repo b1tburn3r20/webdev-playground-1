@@ -1,0 +1,59 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(140, 59, 177);
+}
+
+.nav-item {
+    padding: .5rem;
+    color: white;
+}
+
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    font-size: 2vh;
+
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: blueviolet;
+    border-radius: 25px;
+    padding: 2rem;
+    height: 40vh;
+    width: 30vw;
+    align-items: center;
+    
+    
+}
+.signup-container-middle li{
+    opacity: .5;
+}
+.signup-container-top{
+}
+.signup-container-bottom{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.security-input{
+    display: flex;
+
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
