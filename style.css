@@ -2,13 +2,17 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    
 }
-
+.container{
+    background: rgb(60,48,255);
+background: linear-gradient(90deg, rgba(60,48,255,1) 0%, rgba(93,9,121,1) 49%, rgba(204,79,193,1) 91%);
+}
 .navbar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(140, 59, 177);
+    background-color:rgba(0, 0, 0, .5);
 }
 
 .nav-item {
@@ -31,14 +35,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: blueviolet;
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(15px);
+    box-shadow: -5px 5px rgba(0, 0, 0, .8);
     border-radius: 25px;
     padding: 2rem;
     height: 40vh;
     width: 30vw;
     align-items: center;
-    
-    
 }
 .signup-container-middle li{
     opacity: .5;
@@ -52,8 +56,19 @@
 }
 .security-input{
     display: flex;
-
-    background-color: white;
+    padding: .5rem;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: .5rem;
+}
+label{
+    font-size: 1.5vh;
+    margin-left: .5vw;
+    margin-bottom: -.5vh;
+}
+.security-input::placeholder{
+    color: rgba(255, 255, 255, .7);
 }
