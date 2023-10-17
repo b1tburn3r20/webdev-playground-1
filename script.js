@@ -2,29 +2,30 @@ const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
 const colors = [
-  "#ffb56b",
-  "#fdaf69",
-  "#f89d63",
-  "#f59761",
-  "#ef865e",
-  "#ec805d",
-  "#e36e5c",
-  "#df685c",
-  "#d5585c",
-  "#d1525c",
-  "#c5415d",
-  "#c03b5d",
-  "#b22c5e",
-  "#ac265e",
-  "#9c155f",
-  "#950f5f",
-  "#830060",
-  "#7c0060",
-  "#680060",
-  "#60005f",
-  "#48005f",
-  "#3d005e"
-];
+    "#1a237e",
+    "#273c75",
+    "#3949ab",
+    "#5668c4",
+    "#7986cb",
+    "#8d98c2",
+    "#aab6fe",
+    "#c3d4ff",
+    "#e3f2fd",
+    "#ecf4fd",
+    "#f0f7fd",
+    "#f5f8fa",
+    "#f7fafd",
+    "#f7fbff",
+    "#f8fdff",
+    "#f0f6ff",
+    "#e1ebff",
+    "#c3d2ff",
+    "#a9bcff",
+    "#8796ff",
+    "#677eff",
+    "#000000"
+  ];
+  
 
 circles.forEach(function (circle, index) {
   circle.x = 0;
@@ -45,8 +46,7 @@ function animateCircles() {
   
   circles.forEach(function (circle, index) {
     circle.style.left = x - 12 + "px";
-    circle.style.top = y - 12 + "px";
-    
+    circle.style.top = y - 12 + "px";    
     circle.style.scale = (circles.length - index) / circles.length;
     
     circle.x = x;
