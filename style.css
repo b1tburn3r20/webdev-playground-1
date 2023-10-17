@@ -4,9 +4,10 @@
     padding: 0;
     
 }
+html * {cursor:none!important}
 .container{
-    background: rgb(60,48,255);
-background: linear-gradient(90deg, rgba(60,48,255,1) 0%, rgba(93,9,121,1) 49%, rgba(204,79,193,1) 91%);
+    background: rgb(56,10,185);
+    background: linear-gradient(90deg, rgba(56,10,185,1) 0%, rgba(0,0,0,1) 25%, rgba(13,52,128,1) 91%);
 }
 .navbar {
     display: flex;
@@ -47,8 +48,7 @@ background: linear-gradient(90deg, rgba(60,48,255,1) 0%, rgba(93,9,121,1) 49%, r
 .signup-container-middle li{
     opacity: .5;
 }
-.signup-container-top{
-}
+
 .signup-container-bottom{
     display: flex;
     flex-direction: column;
@@ -72,3 +72,14 @@ label{
 .security-input::placeholder{
     color: rgba(255, 255, 255, .7);
 }
+.circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
